@@ -10,6 +10,8 @@ categories: ["Publications"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+ <br />
+
 # 2022
 
 - He, Y., **Parkinson, T.**, Arens, E., Zhang, H., Li, N., Peng, J., Elson, J., & Maranville, C. (2022). [Creating alliesthesia in cool environments using personal comfort systems](https://doi.org/10.1016/j.buildenv.2021.108642). Building and Environment, 209, 108642.
