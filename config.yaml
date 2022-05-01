@@ -19,7 +19,7 @@ icon:
 params:
   mode: toggle
   useCDN: false
-  subtitle: 'Hello!'
+  subtitle: ""
   hometext: "I made this site as a spot to put all my work. Not much context other than I do research and write R code. You'll find a bit of both here :-)"
   site_type: "Person"
   local_business_type: ""
