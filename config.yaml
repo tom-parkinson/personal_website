@@ -20,7 +20,10 @@ params:
   mode: toggle
   useCDN: false
   subtitle: ""
-  hometext: "I made this site as a spot to put all my work. Not much context other than I do research and write R code. You'll find a bit of both here :-)"
+  hometext: | 
+          Hello! <br /><br />
+          I made this website to serve as single repository for some of my work. There is not much more context than that. <br /><br />
+          I do [research](/research) and [publish papers](/publications) and [write R code](/projects) on the side.
   site_type: "Person"
   local_business_type: ""
   description: "A personal site by Tom Parkinson"
