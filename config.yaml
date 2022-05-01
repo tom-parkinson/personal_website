@@ -1,12 +1,10 @@
 theme: "archie"
-baseURL: https://tomparkinson.netlify.app
+baseURL: https://tomparkinson.netlify.app/
 languageCode: en-us
 title: "Tom Parkinson"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 # Basic Info
-
-
 markup:
   goldmark:
     renderer:
