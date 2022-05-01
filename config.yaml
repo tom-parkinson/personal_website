@@ -1,0 +1,9 @@
+theme: "archie"
+baseURL: http://tomparkinson.netlify.app
+languageCode: en-us
+title: Tom Parkinson
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
