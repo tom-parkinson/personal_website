@@ -11,10 +11,15 @@
 					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
 					{{- end -}}
 				</div>
-				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+				<div class="site-description">
+					{{- if isset .Site.Params "hometext" -}}
+					<p>{{ .Site.Params.Hometext | markdownify }}</p>
+					{{- end -}}
+				</div>
+<!--				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<section class="list-item">
+			<section class="list-item">
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
 					<br><div class="description">
@@ -23,11 +28,11 @@
 						{{ else }}
 						{{ .Summary }}&hellip;
 						{{ end }}
-					</div>
+					</div> 
 					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
-				</section>
+				</section> 
 				{{ end }}
-				{{ template "partials/paginator.html" . }}
+				{{ template "partials/paginator.html" . }} -->
 			</main>
 			{{ partial "footer.html" . }}
 		</div>

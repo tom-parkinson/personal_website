@@ -13,3 +13,6 @@ min_version = "0.41"
 [author]
   name = "Athul Cyriac Ajay"
   homepage = "https://github.com/athul"
+
+[icon.pack]
+  ai = true

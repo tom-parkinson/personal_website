@@ -3,7 +3,50 @@ baseURL: http://tomparkinson.netlify.app
 languageCode: en-us
 title: Tom Parkinson
 
+# Basic Info
+
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# Social Icons
+icon:
+  pack:
+    ai: true
+
+# Page parameters
+params:
+  mode: toggle
+  useCDN: false
+  subtitle: 'A place to put all my stuff'
+  hometext: "Blah Blah"
+  site_type: "Person"
+  local_business_type: ""
+  description: "A personal site by Tom Parkinson"
+  
+  # Social Tags
+  social:
+    - name: LinkedIn
+      icon: linkedin
+      url: 'https://github.com/athul/archie'
+    - name: GitHub
+      icon: github
+      url: 'https://github.com/athul/archie'
+    - name: "Research Gate"
+      icon: researchgate
+      url: 'https://gitlab.com/athul/'
+      
+# Main menu Items
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Research
+      url: /posts
+      weight: 2
+    - name: Projects
+      url: /about
+      weight: 3
