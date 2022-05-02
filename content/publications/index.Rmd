@@ -12,6 +12,11 @@ knitr::opts_chunk$set(collapse = TRUE)
 
  <br />
 
+Below is a list of my publications. Most are open-access, and those that aren't are available for free on [ResearchGate](https://www.researchgate.net/profile/Thomas-Parkinson-4) or [eScholarship](https://escholarship.org/search?departments=cedr&q=author%3AParkinson%2C+Thomas). 
+
+Please contact me if you can't find what you're looking for; I'm always happy to share my work.
+
+
 # 2022
 
 - He, Y., **Parkinson, T.**, Arens, E., Zhang, H., Li, N., Peng, J., Elson, J., & Maranville, C. (2022). [Creating alliesthesia in cool environments using personal comfort systems](https://doi.org/10.1016/j.buildenv.2021.108642). Building and Environment, 209, 108642.
