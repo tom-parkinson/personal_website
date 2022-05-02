@@ -6,8 +6,11 @@ categories: ["Publications"]
 #tags: ["Papers"]
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+
+# define knitr settings
 knitr::opts_chunk$set(collapse = TRUE)
+
 ```
 
  <br />

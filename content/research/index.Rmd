@@ -1,39 +1,36 @@
 ---
 title: "Research"
-author: "Frida Gomam"
-date: 2020-12-01T21:13:14-05:00
+author: "Tom Parkinson"
+date: '`r format(Sys.time(), "%B  %Y")`'
 categories: ["Research"]
-#tags: ["R Markdown", "plot", "regression"]
+#tags: ["Research"]
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+
+# define knitr settings
 knitr::opts_chunk$set(collapse = TRUE)
+
+
+
 ```
 
  <br />
 
-# R Markdown
+I'm interested in high performance buildings that enhance occupant comfort and well-being. This includes indoor environmental quality, application of sensor technologies to built environments, psychophysics, and human thermal physiology & comfort.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Below is an overview of some of the research I've done over the last 10 years. Please reach out if you'd like more details.
 
-You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
-```
+# Occupant surveys
 
-# Including Plots
+I'm currently responsible for the [CBE Occupant Survey](https://cbe.berkeley.edu/resources/occupant-survey/), one of the largest and longest-running post-occupancy evaluation tools. Along with managing the survey tool, I also analyse the database of 90,000 responses from over 800 office buildings. I've published work [summarising the survey](https://doi.org/10.5334/bc.76) and exploring the source of [occupant dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270).
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+Much of the survey project involves working closely with industry partners to evaluate their office buildings. Some of these organisations include International WELL Building Institute, Salesforce, Atelier Ten, Gensler, and Arup.
 
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
-```
+
+# Wildfire resilience
+
+I was recently awarded [seed-funding](https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/) to develop a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. This project will develop software that programs smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations to ensure adequate indoor air quality. The aim is to improve public health and climate resilience in residential buildings.
+
+
