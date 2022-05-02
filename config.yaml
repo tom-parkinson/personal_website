@@ -38,6 +38,9 @@ params:
     - name: "Google Scholar"
       icon: book-open
       url: 'https://github.com/tom-parkinson'
+    - name: ORCID
+      icon: book
+      url: 'https://orcid.org/0000-0002-0088-8754'
     - name: GitHub
       icon: github
       url: 'https://github.com/tom-parkinson'
