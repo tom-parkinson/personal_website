@@ -21,9 +21,11 @@ params:
   useCDN: false
   subtitle: ""
   hometext: | 
-          Hello! <br /><br />
-          I made this website to serve as single repository for some of my work. There is not much more context than that. <br /><br />
-          I do [research](/research) and [publish papers](/publications) and [write R code](/projects) on the side.
+          Hello! I made this website to serve as single repository for my work. There is not much more context than that. <br /><br />
+          My [research](/research) is focused on technologies and design solutions to improve wellbeing in the built environment. 
+          I have a decade of experience in laboratory and field research that combines building physics, human perception, data science, 
+          and sensor technologies. The nitty-gritty details are in [publications](/publications) I've authored. <br /><br />
+          I also do data science [projects](/projects) on the side. I use `R` in my work to translate data into actionable insights.
   site_type: "Person"
   local_business_type: ""
   description: "A personal site by Tom Parkinson"
@@ -33,6 +35,9 @@ params:
     - name: LinkedIn
       icon: linkedin
       url: 'https://www.linkedin.com/in/thomas-c-parkinson/'
+    - name: "Google Scholar"
+      icon: book-open
+      url: 'https://github.com/tom-parkinson'
     - name: GitHub
       icon: github
       url: 'https://github.com/tom-parkinson'
