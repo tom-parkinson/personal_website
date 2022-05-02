@@ -37,7 +37,7 @@ params:
       url: 'https://www.linkedin.com/in/thomas-c-parkinson/'
     - name: "Google Scholar"
       icon: book-open
-      url: 'https://github.com/tom-parkinson'
+      url: 'https://scholar.google.com/citations?user=x8ex0KsAAAAJ'
     - name: ORCID
       icon: book
       url: 'https://orcid.org/0000-0002-0088-8754'
