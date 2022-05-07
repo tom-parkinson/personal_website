@@ -6,12 +6,13 @@ categories: ["Research"]
 #tags: ["Research"]
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, echo = FALSE}
+
+# load tidyverse
+library(tidyverse)
 
 # define knitr settings
-knitr::opts_chunk$set(collapse = TRUE)
-
-
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, fig.width = 7.5, fig.align = "center")
 
 ```
 
@@ -26,8 +27,16 @@ Below is an overview of some of the research I've done over the last 10 years. P
 
 I'm currently responsible for the [CBE Occupant Survey](https://cbe.berkeley.edu/resources/occupant-survey/), one of the largest and longest-running post-occupancy evaluation tools. Along with managing the survey tool, I also analyse the database of 90,000 responses from over 800 office buildings. I've published work [summarising the survey](https://doi.org/10.5334/bc.76) and exploring the source of [occupant dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270).
 
-Much of the survey project involves working closely with industry partners to evaluate their office buildings. Some of these organisations include International WELL Building Institute, Salesforce, Atelier Ten, Gensler, and Arup.
+```{r survey, include = TRUE}
 
+# load plot object
+read_rds(here::here("static", "plots", "plot_sat.rds")) +
+  theme(plot.background = element_blank(),
+        panel.)
+
+```
+
+Much of the survey project involves working closely with industry partners to evaluate their office buildings. Some of these organisations include International WELL Building Institute, Salesforce, Atelier Ten, Gensler, and Arup.
 
 # Wildfire resilience
 
