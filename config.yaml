@@ -21,29 +21,37 @@ params:
   useCDN: false
   subtitle: ""
   hometext: | 
-          Hello! I made this website to serve as single repository for my work. There is not much more context than that. <br /><br />
+          Hello! I'm a professional researcher at the [Center for the Built Environment](https://cbe.berkeley.edu) at the University of California, Berkeley.
           My [research](/research) is focused on technologies and design solutions to improve wellbeing in the built environment. 
           I have a decade of experience in laboratory and field research that combines building physics, human perception, data science, 
-          and sensor technologies. The nitty-gritty details are in [publications](/publications) I've authored. <br /><br />
-          I also do data science [projects](/projects) on the side. I use `R` in my work to translate data into actionable insights.
+          and sensor technologies. Details of my work are included in [publications](/publications) I've authored. <br /><br />
+          Before moving to UC Berkeley, I received my PhD in Architectural Science and then worked as a Lecturer in the 
+          [School of Architecture, Design and Planning](https://www.sydney.edu.au/architecture/) at The University of Sydney.
+          During my time there, I was an active member of the [Indoor Environmental Quality Lab](https://www.sydney.edu.au/architecture/our-research/architectural-science-research/indoor-environmental-quality.html) (IEQ Lab)
+          where I was both research staff and lab manager. I maintain a connection to the IEQ Lab as an Honorary Research Fellow. <br /><br />
+          I also do data science [projects](/projects) on the side. I use `R` in my work to translate data into actionable insights. 
+          I've worked on projects for a range of business that include sales projections, operation optimization, and reporting. <br /><br />
+          I made this simple site to serve as single repository for my work. 
+          You can reach me at [LinkedIn](https://www.linkedin.com/in/thomas-c-parkinson/), 
+          [ResearchGate](https://www.researchgate.net/profile/Thomas-Parkinson-4), or [Github](https://github.com/tom-parkinson) for more details. <br /><br />
   site_type: "Person"
   local_business_type: ""
   description: "A personal site by Tom Parkinson"
   
   # Social Tags
-  social:
-    - name: LinkedIn
-      icon: linkedin
-      url: 'https://www.linkedin.com/in/thomas-c-parkinson/'
-    - name: "Google Scholar"
-      icon: book-open
-      url: 'https://scholar.google.com/citations?user=x8ex0KsAAAAJ'
-    - name: ORCID
-      icon: book
-      url: 'https://orcid.org/0000-0002-0088-8754'
-    - name: GitHub
-      icon: github
-      url: 'https://github.com/tom-parkinson'
+  # social:
+  #   - name: LinkedIn
+  #     icon: linkedin
+  #     url: 'https://www.linkedin.com/in/thomas-c-parkinson/'
+  #   - name: "Google Scholar"
+  #     icon: book-open
+  #     url: 'https://scholar.google.com/citations?user=x8ex0KsAAAAJ'
+  #   - name: ORCID
+  #     icon: book
+  #     url: 'https://orcid.org/0000-0002-0088-8754'
+  #   - name: GitHub
+  #     icon: github
+  #     url: 'https://github.com/tom-parkinson'
       
 # Main menu Items
 menu:
