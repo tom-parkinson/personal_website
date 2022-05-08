@@ -12,7 +12,7 @@ categories: ["Research"]
 library(tidyverse)
 
 # define knitr settings
-knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, fig.width = 7.5, fig.align = "center")
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, fig.width = 8.0, fig.align = "center")
 
 ```
 
@@ -23,16 +23,15 @@ I'm interested in high performance buildings that enhance occupant comfort and w
 Below is an overview of some of the research I've done over the last 10 years. Please reach out if you'd like more details.
 
 
-# Occupant surveys
+# Occupant surveys [Ongoing]
 
 I'm currently responsible for the [CBE Occupant Survey](https://cbe.berkeley.edu/resources/occupant-survey/), one of the largest and longest-running post-occupancy evaluation tools. Along with managing the survey tool, I also analyse the database of 90,000 responses from over 800 office buildings. I've published work [summarising the survey](https://doi.org/10.5334/bc.76) and exploring the source of [occupant dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270).
 
-```{r survey, include = TRUE}
+```{r survey, include = TRUE, fig.height = 4}
 
 # load plot object
 read_rds(here::here("static", "plots", "plot_sat.rds")) +
-  theme(plot.background = element_blank(),
-        panel.)
+  theme(plot.background = element_blank())
 
 ```
 
@@ -40,6 +39,16 @@ Much of the survey project involves working closely with industry partners to ev
 
 # Wildfire resilience
 
-I was recently awarded [seed-funding](https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/) to develop a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. This project will develop software that programs smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations to ensure adequate indoor air quality. The aim is to improve public health and climate resilience in residential buildings.
+Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. This [project](https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/) will develop a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. The solution includes software that programs smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations to ensure adequate indoor air quality. The aim is to improve public health and climate resilience in residential buildings.
 
+```{r citris, include = TRUE, fig.height = 5}
 
+# load plot object
+read_rds(here::here("static", "plots", "plot_map.rds")) +
+  labs(fill = "Indoor PM2.5\n(µg/m3)") +
+  theme(plot.title = element_blank(), 
+        plot.subtitle = element_blank(), 
+        legend.title.align = 0.0,
+        plot.background = element_blank())
+
+```
