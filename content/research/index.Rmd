@@ -72,11 +72,15 @@ Buildings should aspire to more than just comfort and neutrality – they should
 
 ![Thermoreceptors](/images/alliesthesia.png)\
 
-We simulated the response of temperature sensors in [the skin](https://doi.org/10.1111/ina.12859){target="_blank"} (known as thermoreceptors) and used machine learning to predict thermal pleasure based on those simulations. This is the first time that thermal pleasure has been modelled using thermoreceptors. Not only do we better understand the neurophysiology of thermal perception, but we can now predict how we experience thermal pleasure in buildings.
+We simulated the response of temperature sensors in [the skin](https://doi.org/10.1111/ina.12859){target="_blank"} (known as thermoreceptors) and used machine learning to predict thermal pleasure based on those simulations. This is the first time that thermal pleasure has been modelled using thermoreceptors. Not only do we better understand the neurophysiology of thermal perception, but we can now predict how occupants experience thermal pleasure in buildings.
 
 # IEQ monitoring
 
-Here
+Companies aspiring to sustainability and wellness leadership prioritize occupant health and comfort in their office buildings. This includes strategies for managing workplace indoor environmental quality (IEQ) for building certification schemes like [WELL Building Standard](https://www.wellcertified.com){target="_blank"} and [LEED Rating System](https://www.usgbc.org/leed){target="_blank"}. We leveraged recent innovations in sensor technologies to develop the [SAMBA IEQ Monitoring system](https://www.sydney.edu.au/news-opinion/news/2016/06/21/pioneering-technology-rolls-out-to-track-the-australian-indoor-c.html){target="_blank"}. Designed specifically for IEQ assessments of commercial office buildings, costs were kept low enough to permit multiple units to be deployed across an office or building to measure key environmental parameters as experienced by occupants throughout the year.
+
+![SAMBA](/images/samba.png)\
+
+Along with patenting the technology, we [detailed the development](https://doi.org/10.1016/j.buildenv.2018.12.010){target="_blank"} and showed that despite some sensor inaccuracies, continuous monitoring technologies provide a [better assessment](https://doi.org/10.1016/j.buildenv.2018.12.016){target="_blank"} of a building’s long-term indoor environmental quality. We also found [long-term thermal comfort](https://doi.org/10.1016/j.enbuild.2020.110270){target="_blank"} is shaped by large variations outside acceptable seasonal temperature ranges rather than mean temperatures. We are working to update international standards to permit the use of low-cost continuous monitoring systems.
 
 # Measurement and verification 
 
