@@ -15,9 +15,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
  <br />
 
-Below is a list of my publications. Most are open-access, and those that aren't are available for free on [ResearchGate](https://www.researchgate.net/profile/Thomas-Parkinson-4) or [eScholarship](https://escholarship.org/search?departments=cedr&q=author%3AParkinson%2C+Thomas). 
-
-Please contact me if you can't find what you're looking for; I'm always happy to share my work.
+Below is a list of my publications. Most are open-access, and those that aren't are open access on [ResearchGate](https://www.researchgate.net/profile/Thomas-Parkinson-4){target="_blank"} or [eScholarship](https://escholarship.org/search?departments=cedr&q=author%3AParkinson%2C+Thomas){target="_blank"}. Please contact me if you can't find what you're looking for; I'm always happy to share my work.
 
 
 # 2022
