@@ -88,4 +88,15 @@ Here
 
 # Thermal comfort
 
-Here
+I have done extensive research on the topic of human thermal comfort in buildings. This work has ranged from [residential air-conditioning use](https://doi.org/10.1016/j.enbuild.2017.02.061){target="_blank"} to [anomaly detection of comfort votes](){target="_blank"} to [thermal sensitivity of building occupants](){target="_blank"}. Most notably, we used a [global database](https://doi.org/10.1016/j.buildenv.2018.06.022){target="_blank"} to define a [set of nudges](https://doi.org/10.1016/j.enbuild.2019.109559){target="_blank"} to [international thermal comfort standards](https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy){target="_blank"} to improve comfort in commercial buildings while reducing energy use. This work is an update to the landmark adaptive comfort study, which demonstrated that occupants of naturally ventilated buildings were more comfortable with seasonal temperature variation compared to people in air-conditioned buildings.
+
+```{r acm, include = TRUE, fig.height = 5.5}
+
+# load plot object
+read_rds(here::here("static", "plots", "plot_acm.rds")) +
+  labs(title = NULL, subtitle = NULL) +
+  theme(plot.background = element_blank())
+
+```
+
+The three proposed nudges to the international standards were to 1) allow the adaptive comfort model to be used in mixed-mode buildings, 2) change the acceptable limits to allow warmer indoor air temperatures in Asian countries, and 3) allow the air conditioning setpoint in office buildings to vary seasonally. These nudges could avoid the persistent over-cooling we see in our buildings, and improve energy performance without sacrificing occupant comfort.
