@@ -12,20 +12,18 @@ categories: ["Research"]
 library(tidyverse)
 
 # define knitr settings
-knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, fig.width = 8.0, fig.align = "center")
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, 
+                      fig.width = 8.0, fig.align = "center")
 
 ```
 
  <br />
 
-I'm interested in high performance buildings that enhance occupant comfort and well-being. This includes indoor environmental quality, application of sensor technologies to built environments, psychophysics, and human thermal physiology & comfort.
+I'm interested in high performance buildings that enhance occupant comfort and well-being. This includes indoor environmental quality, application of sensor technologies to built environments, psychophysics, and human thermal physiology & comfort. Below is an overview of some of the research I've done over the last 10 years.
 
-Below is an overview of some of the research I've done over the last 10 years. Please reach out if you'd like more details.
+# Occupant surveys
 
-
-# Occupant surveys [Ongoing]
-
-I'm currently responsible for the [CBE Occupant Survey](https://cbe.berkeley.edu/resources/occupant-survey/), one of the largest and longest-running post-occupancy evaluation tools. Along with managing the survey tool, I also analyse the database of 90,000 responses from over 800 office buildings. I've published work [summarising the survey](https://doi.org/10.5334/bc.76) and exploring the source of [occupant dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270).
+I'm responsible for the <a href="https://cbe.berkeley.edu/resources/occupant-survey/" target="_blank">CBE Occupant Survey</a>, one of the largest and longest-running post-occupancy evaluation tools. This includes analysing the database of 90,000 responses from over 800 office buildings. I've published work <a href="https://doi.org/10.5334/bc.76" target="_blank">summarising the survey</a> and exploring the source of <a href="https://doi.org/10.1016/j.buildenv.2021.108270" target="_blank">occupant dissatisfaction</a>.
 
 ```{r survey, include = TRUE, fig.height = 4}
 
@@ -35,7 +33,7 @@ read_rds(here::here("static", "plots", "plot_sat.rds")) +
 
 ```
 
-Much of the survey project involves working closely with industry partners to evaluate their office buildings. Some of these organisations include International WELL Building Institute, Salesforce, Atelier Ten, Gensler, and Arup.
+Much of my time on this project involves working closely with industry partners to evaluate their office buildings. Some of these organisations include International WELL Building Institute, Salesforce, JLL, Atelier Ten, Gensler, and Arup.
 
 # Wildfire resilience
 
@@ -58,4 +56,24 @@ read_rds(here::here("static", "plots", "plot_map.rds")) +
 
 ```
 
-A core aim of the project is to evaluate the filtration efficiency of portable air cleaners compared to central furnace systems. This includes a mass balance model of particulate infiltration during the 2020 wildfires based on housing characteristics from census data at the tract level. 
+A core aim of the project is to evaluate the filtration efficiency of portable air cleaners compared to central furnace systems. This includes a mass balance model of particulate infiltration during the 2020 wildfires based on housing characteristics from census data at the tract level.
+
+# Overcooling
+
+Here
+
+# Alliesthesia
+
+Here
+
+# IEQ monitoring technology
+
+Here
+
+# Measurement and verification 
+
+Here
+
+# Thermal comfort
+
+Here
