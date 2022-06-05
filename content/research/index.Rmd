@@ -68,7 +68,11 @@ The impacts of pervasive overcooling on well-being and performance are borne pre
 
 # Alliesthesia
 
-Buildings should aspire to more than just comfort and neutrality – they should excite the senses. We’ve been researching thermal alliesthesia, a framework that combines physiology and psychology, to better understand the origins of thermal pleasure. We conducted a series of human-subject experiments in controlled laboratory settings to understand the psychophysiological basis of thermal pleasure. These studies have identified the skin as the origin of thermal pleasure and the key to understanding our familiar experiences of thermal delight.
+Buildings should aspire to more than just comfort and neutrality – they should excite the senses. We’ve been researching [thermal alliesthesia](https://doi.org/10.1080/09613218.2015.989662){target="_blank"}, a framework that combines physiology and psychology, to better understand the origins of thermal pleasure. We conducted a series of human-subject experiments with [step changes](https://doi.org/10.1080/09613218.2015.1059653){target="_blank"}, [contact heating](https://doi.org/10.1080/09613218.2015.1082334){target="_blank"}, and [elevated air movement](https://doi.org/10.1080/09613218.2016.1140932){target="_blank"} to understand the psychophysiological basis of thermal pleasure. These studies identified the skin as the origin of thermal pleasure and the key to understanding our familiar experiences of thermal delight.
+
+![Thermoreceptors](/images/alliesthesia.png)\
+
+We simulated the response of temperature sensors in [the skin](https://doi.org/10.1111/ina.12859){target="_blank"} (known as thermoreceptors) and used machine learning to predict thermal pleasure based on those simulations. This is the first time that thermal pleasure has been modelled using thermoreceptors. Not only do we better understand the neurophysiology of thermal perception, but we can now predict how we experience thermal pleasure in buildings.
 
 # IEQ monitoring
 
