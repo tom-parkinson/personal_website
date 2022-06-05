@@ -23,7 +23,7 @@ I'm interested in high performance buildings that enhance occupant comfort and w
 
 # Occupant surveys
 
-I'm responsible for the <a href="https://cbe.berkeley.edu/resources/occupant-survey/" target="_blank">CBE Occupant Survey</a>, one of the largest and longest-running post-occupancy evaluation tools. This includes analysing the database of 90,000 responses from over 800 office buildings. I've published work <a href="https://doi.org/10.5334/bc.76" target="_blank">summarising the survey</a> and exploring the source of <a href="https://doi.org/10.1016/j.buildenv.2021.108270" target="_blank">occupant dissatisfaction</a>.
+I'm responsible for the [CBE Occupant Survey](https://cbe.berkeley.edu/resources/occupant-survey/){target="_blank"}, one of the largest and longest-running post-occupancy evaluation tools. This includes analysing the database of 90,000 responses from over 800 office buildings. I've published work [summarising the survey](https://doi.org/10.5334/bc.76){target="_blank"} and exploring the source of [occupant dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270){target="_blank"}.
 
 ```{r survey, include = TRUE, fig.height = 4}
 
@@ -37,7 +37,7 @@ Much of my time on this project involves working closely with industry partners 
 
 # Wildfire resilience
 
-Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. With this <a href="https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/" target="_blank">project</a> we developed a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. The solution includes software for smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations. This ensures adequate indoor air quality and improves public health and climate resilience in residential buildings.
+Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. With this [project](https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/){target="_blank"} we developed a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. The solution includes software for smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations. This ensures adequate indoor air quality and improves public health and climate resilience in residential buildings.
 
 ```{r citris, include = TRUE, fig.height = 5.5}
 
@@ -60,15 +60,15 @@ A major aim of the project is to evaluate the filtration efficiency of portable 
 
 # Overcooling
 
-The appetite for cooling is growing - air conditioning represents the fastest growing source of energy use in buildings, with cooling energy tripling between 1990 and 2016. Part of this energy demand is wasted on excessive cooling of offices. <a href="https://rdcu.be/cCQlN" target="_blank">We analyzed</a> 38,851 satisfaction responses in the CBE Occupant Survey as well as crowd-sourced thermal comfort feedback from office building occupants on Twitter. We collected 16,791 tweets with common expressions of cold discomfort across the US and found office temperatures are generally less comfortable for women largely due to this overcooling.
+The appetite for cooling is growing - air conditioning represents the fastest growing source of energy use in buildings, with cooling energy tripling between 1990 and 2016. Part of this energy demand is wasted on excessive cooling of offices. [We analyzed](https://rdcu.be/cCQlN){target="_blank"} 38,851 satisfaction responses in the CBE Occupant Survey as well as crowd-sourced thermal comfort feedback from office building occupants on Twitter. We collected 16,791 tweets with common expressions of cold discomfort across the US and found office temperatures are generally less comfortable for women largely due to this overcooling.
 
 ![Overcooling](/images/alluvial.png)\
 
-The impacts of this pervasive overcooling on well-being and performance are borne predominantly by women. These findings corroborate existing evidence of lower thermal satisfaction in offices for women and identify overcooling as a common reason for the gender disparity. The problem is likely to increase in the future due to growing demand for cooling in increasingly extreme climates. 
+The impacts of pervasive overcooling on well-being and performance are borne predominantly by women. These findings corroborate existing evidence of lower thermal satisfaction in offices for women and identify overcooling as a common reason for the gender disparity. The problem is likely to increase in the future due to growing demand for cooling in increasingly extreme climates. 
 
 # Alliesthesia
 
-Here
+Buildings should aspire to more than just comfort and neutrality – they should excite the senses. We’ve been researching thermal alliesthesia, a framework that combines physiology and psychology, to better understand the origins of thermal pleasure. We conducted a series of human-subject experiments in controlled laboratory settings to understand the psychophysiological basis of thermal pleasure. These studies have identified the skin as the origin of thermal pleasure and the key to understanding our familiar experiences of thermal delight.
 
 # IEQ monitoring
 
