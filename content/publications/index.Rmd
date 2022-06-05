@@ -22,53 +22,53 @@ Please contact me if you can't find what you're looking for; I'm always happy to
 
 # 2022
 
-- He, Y., **Parkinson, T.**, Arens, E., Zhang, H., Li, N., Peng, J., Elson, J., & Maranville, C. (2022). [Creating alliesthesia in cool environments using personal comfort systems](https://doi.org/10.1016/j.buildenv.2021.108642). Building and Environment, 209, 108642.
-- Rupp, R. F., **Parkinson, T.**, Kim, J., Toftum, J., & de Dear, R. (2022). [The impact of occupant’s thermal sensitivity on adaptive thermal comfort model](https://doi.org/10.1016/j.buildenv.2021.108517). Building and Environment, 207, 108517.
+- He, Y., **Parkinson, T.**, Arens, E., Zhang, H., Li, N., Peng, J., Elson, J., & Maranville, C. (2022). [Creating alliesthesia in cool environments using personal comfort systems](https://doi.org/10.1016/j.buildenv.2021.108642){target="_blank"}. Building and Environment, 209, 108642.
+- Rupp, R. F., **Parkinson, T.**, Kim, J., Toftum, J., & de Dear, R. (2022). [The impact of occupant’s thermal sensitivity on adaptive thermal comfort model](https://doi.org/10.1016/j.buildenv.2021.108517){target="_blank"}. Building and Environment, 207, 108517.
 
 
 # 2021
 
-- Graham, L. T., **Parkinson, T.**, & Schiavon, S. (2021). [Lessons learned from 20 years of CBE’s occupant surveys](https://doi.org/10.5334/bc.76). Buildings and Cities, 2(1), 166–184.
-- Kent, M., **Parkinson, T.**, Kim, J., & Schiavon, S. (2021). [A data-driven analysis of occupant workspace dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270). Building and Environment, 205, 108270.
-- Luo, M., Zhang, H., Raftery, P., Zhou, L., **Parkinson, T.**, Arens, E., He, Y., & Present, E. (2021). [Detailed measured air speed distribution in four commercial buildings with ceiling fans](https://doi.org/10.1016/j.buildenv.2021.107979). Building and Environment, 200, 107979.
-- **Parkinson, T.**, Schiavon, S., de Dear, R., & Brager, G. (2021). [Overcooling of offices reveals gender inequity in thermal comfort](https://doi.org/10.1038/s41598-021-03121-1). Scientific Reports, 11(1), 23684.
-- **Parkinson, T.**, Zhang, H., Arens, E., He, Y., de Dear, R., Elson, J., Parkinson, A., Maranville, C., & Wang, A. (2021). [Predicting thermal pleasure experienced in dynamic environments from simulated cutaneous thermoreceptor activity](https://doi.org/10.1111/ina.12859). Indoor Air, 31(6), 2266–2280.
+- Graham, L. T., **Parkinson, T.**, & Schiavon, S. (2021). [Lessons learned from 20 years of CBE’s occupant surveys](https://doi.org/10.5334/bc.76){target="_blank"}. Buildings and Cities, 2(1), 166–184.
+- Kent, M., **Parkinson, T.**, Kim, J., & Schiavon, S. (2021). [A data-driven analysis of occupant workspace dissatisfaction](https://doi.org/10.1016/j.buildenv.2021.108270){target="_blank"}. Building and Environment, 205, 108270.
+- Luo, M., Zhang, H., Raftery, P., Zhou, L., **Parkinson, T.**, Arens, E., He, Y., & Present, E. (2021). [Detailed measured air speed distribution in four commercial buildings with ceiling fans](https://doi.org/10.1016/j.buildenv.2021.107979){target="_blank"}. Building and Environment, 200, 107979.
+- **Parkinson, T.**, Schiavon, S., de Dear, R., & Brager, G. (2021). [Overcooling of offices reveals gender inequity in thermal comfort](https://doi.org/10.1038/s41598-021-03121-1){target="_blank"}. Scientific Reports, 11(1), 23684.
+- **Parkinson, T.**, Zhang, H., Arens, E., He, Y., de Dear, R., Elson, J., Parkinson, A., Maranville, C., & Wang, A. (2021). [Predicting thermal pleasure experienced in dynamic environments from simulated cutaneous thermoreceptor activity](https://doi.org/10.1111/ina.12859){target="_blank"}. Indoor Air, 31(6), 2266–2280.
 
 
 # 2020
 
-- Duarte Roa, C., Schiavon, S., & **Parkinson, T.** (2020). [Targeted occupant surveys: A novel method to effectively relate occupant feedback with environmental conditions](https://doi.org/10.1016/j.buildenv.2020.107129). Building and Environment, 184, 107129.
-- Li, P., **Parkinson, T.**, Schiavon, S., Froese, T. M., de Dear, R., Rysanek, A., & Staub-French, S. (2020). [Improved long-term thermal comfort indices for continuous monitoring](https://doi.org/10.1016/j.enbuild.2020.110270). Energy and Buildings, 224, 110270.
-- **Parkinson, T.**, de Dear, R., & Brager, G. (2020). [Nudging the adaptive thermal comfort model](https://doi.org/10.1016/j.enbuild.2019.109559). Energy and Buildings, 206, 109559.
+- Duarte Roa, C., Schiavon, S., & **Parkinson, T.** (2020). [Targeted occupant surveys: A novel method to effectively relate occupant feedback with environmental conditions](https://doi.org/10.1016/j.buildenv.2020.107129){target="_blank"}. Building and Environment, 184, 107129.
+- Li, P., **Parkinson, T.**, Schiavon, S., Froese, T. M., de Dear, R., Rysanek, A., & Staub-French, S. (2020). [Improved long-term thermal comfort indices for continuous monitoring](https://doi.org/10.1016/j.enbuild.2020.110270){target="_blank"}. Energy and Buildings, 224, 110270.
+- **Parkinson, T.**, de Dear, R., & Brager, G. (2020). [Nudging the adaptive thermal comfort model](https://doi.org/10.1016/j.enbuild.2019.109559){target="_blank"}. Energy and Buildings, 206, 109559.
 
 
 # 2019
 
-- Cheung, T., Schiavon, S., **Parkinson, T.**, Li, P., & Brager, G. (2019). [Analysis of the accuracy on PMV – PPD model using the ASHRAE Global Thermal Comfort Database II](https://doi.org/10.1016/j.buildenv.2019.01.055). Building and Environment, 153, 205–217.
-- Kim, J., Tartarini, F., **Parkinson, T.**, Cooper, P., & de Dear, R. (2019). [Thermal comfort in a mixed-mode building: Are occupants more adaptive?](https://doi.org/10.1016/j.enbuild.2019.109436) Energy and Buildings, 203, 109436.
-- Li, P., **Parkinson, T.**, Brager, G., Schiavon, S., Cheung, T. C. T., & Froese, T. (2019). [A data-driven approach to defining acceptable temperature ranges in buildings](https://doi.org/10.1016/j.buildenv.2019.02.020). Building and Environment, 153, 302–312.
-- **Parkinson, T.**, Parkinson, A., & de Dear, R. (2019a). [Continuous IEQ monitoring system: Context and development. Building and Environment](https://doi.org/10.1016/j.buildenv.2018.12.010), 149, 15–25.
-- **Parkinson, T.**, Parkinson, A., & de Dear, R. (2019b). [Continuous IEQ monitoring system: Performance specifications and thermal comfort classification](https://doi.org/10.1016/j.buildenv.2018.12.016). Building and Environment, 149, 241–252.
-- Wang, Z., **Parkinson, T.**, Li, P., Lin, B., & Hong, T. (2019). [The Squeaky wheel: Machine learning for anomaly detection in subjective thermal comfort votes](https://doi.org/10.1016/j.buildenv.2019.01.050). Building and Environment, 151, 219–227.
+- Cheung, T., Schiavon, S., **Parkinson, T.**, Li, P., & Brager, G. (2019). [Analysis of the accuracy on PMV – PPD model using the ASHRAE Global Thermal Comfort Database II](https://doi.org/10.1016/j.buildenv.2019.01.055){target="_blank"}. Building and Environment, 153, 205–217.
+- Kim, J., Tartarini, F., **Parkinson, T.**, Cooper, P., & de Dear, R. (2019). [Thermal comfort in a mixed-mode building: Are occupants more adaptive?](https://doi.org/10.1016/j.enbuild.2019.109436){target="_blank"} Energy and Buildings, 203, 109436.
+- Li, P., **Parkinson, T.**, Brager, G., Schiavon, S., Cheung, T. C. T., & Froese, T. (2019). [A data-driven approach to defining acceptable temperature ranges in buildings](https://doi.org/10.1016/j.buildenv.2019.02.020){target="_blank"}. Building and Environment, 153, 302–312.
+- **Parkinson, T.**, Parkinson, A., & de Dear, R. (2019a). [Continuous IEQ monitoring system: Context and development. Building and Environment](https://doi.org/10.1016/j.buildenv.2018.12.010){target="_blank"}, 149, 15–25.
+- **Parkinson, T.**, Parkinson, A., & de Dear, R. (2019b). [Continuous IEQ monitoring system: Performance specifications and thermal comfort classification](https://doi.org/10.1016/j.buildenv.2018.12.016){target="_blank"}. Building and Environment, 149, 241–252.
+- Wang, Z., **Parkinson, T.**, Li, P., Lin, B., & Hong, T. (2019). [The Squeaky wheel: Machine learning for anomaly detection in subjective thermal comfort votes](https://doi.org/10.1016/j.buildenv.2019.01.050){target="_blank"}. Building and Environment, 151, 219–227.
 
 
 # 2018
 
-- de Dear, R., Kim, J., & **Parkinson, T.** (2018). [Residential adaptive comfort in a humid subtropical climate—Sydney Australia](https://doi.org/10.1016/j.enbuild.2017.11.028). Energy and Buildings, 158(Supplement C), 1296–1305.
-- Földváry Ličina, V., Cheung, T., Zhang, H., de Dear, R., **Parkinson, T.**, Arens, E., Chun, C., Schiavon, S., Luo, M., Brager, G., Li, P., Kaam, S., Adebamowo, M. A., Andamon, M. M., Babich, F., Bouden, C., Bukovianska, H., Candido, C., Cao, B., … Zhou, X. (2018). [Development of the ASHRAE Global Thermal Comfort Database II](https://doi.org/10.1016/j.buildenv.2018.06.022). Building and Environment, 142, 502–512.
-- Song, Y., Sun, Y., Luo, S., Tian, Z., Hou, J., Kim, J., **Parkinson, T.**, & de Dear, R. (2018). [Residential adaptive comfort in a humid continental climate – Tianjin China](https://doi.org/10.1016/j.enbuild.2018.03.083). Energy and Buildings, 170, 115–121.
+- de Dear, R., Kim, J., & **Parkinson, T.** (2018). [Residential adaptive comfort in a humid subtropical climate—Sydney Australia](https://doi.org/10.1016/j.enbuild.2017.11.028){target="_blank"}. Energy and Buildings, 158(Supplement C), 1296–1305.
+- Földváry Ličina, V., Cheung, T., Zhang, H., de Dear, R., **Parkinson, T.**, Arens, E., Chun, C., Schiavon, S., Luo, M., Brager, G., Li, P., Kaam, S., Adebamowo, M. A., Andamon, M. M., Babich, F., Bouden, C., Bukovianska, H., Candido, C., Cao, B., … Zhou, X. (2018). [Development of the ASHRAE Global Thermal Comfort Database II](https://doi.org/10.1016/j.buildenv.2018.06.022){target="_blank"}. Building and Environment, 142, 502–512.
+- Song, Y., Sun, Y., Luo, S., Tian, Z., Hou, J., Kim, J., **Parkinson, T.**, & de Dear, R. (2018). [Residential adaptive comfort in a humid continental climate – Tianjin China](https://doi.org/10.1016/j.enbuild.2018.03.083){target="_blank"}. Energy and Buildings, 170, 115–121.
 
 
 # Older
 
-- Kim, J., de Dear, R., **Parkinson, T.**, & Candido, C. (2017). [Understanding patterns of adaptive comfort behaviour in the Sydney mixed-mode residential context](https://doi.org/10.1016/j.enbuild.2017.02.061). Energy and Buildings, 141(Supplement C), 274–283.
+- Kim, J., de Dear, R., **Parkinson, T.**, & Candido, C. (2017). [Understanding patterns of adaptive comfort behaviour in the Sydney mixed-mode residential context](https://doi.org/10.1016/j.enbuild.2017.02.061){target="_blank"}. Energy and Buildings, 141(Supplement C), 274–283.
 - Kim, J., De Dear, R., **Parkinson, T.**, & Candido, C. (2017). Air Conditioning Usage and Environmental Control Behaviour in Residential Contexts. Proceedings of the 15th IBPSA Conference, 1778–1783.
-- **Parkinson, T.**, & de Dear, R. J. (2017). [Thermal pleasure in built environments: Spatial alliesthesia from air movement](https://doi.org/10.1080/09613218.2016.1140932). Building Research & Information, 45(3), 320–335.
-- **Parkinson, T.**, & de Dear, R. J. (2016). [Thermal pleasure in built environments: Spatial alliesthesia from contact heating](https://doi.org/10.1080/09613218.2015.1082334). Building Research & Information, 44(3), 248–262.
-- **Parkinson, T.**, de Dear, R. J., & Candido, C. (2016). [Thermal pleasure in built environments: Alliesthesia in different thermoregulatory zones](https://doi.org/10.1080/09613218.2015.1059653). Building Research & Information, 44(1), 20–33.
-- **Parkinson, T.**, & de Dear, R. J. (2015). [Thermal pleasure in built environments: Physiology of alliesthesia](https://doi.org/10.1080/09613218.2015.989662). Building Research & Information, 43(3), 288–301.
+- **Parkinson, T.**, & de Dear, R. J. (2017). [Thermal pleasure in built environments: Spatial alliesthesia from air movement](https://doi.org/10.1080/09613218.2016.1140932){target="_blank"}. Building Research & Information, 45(3), 320–335.
+- **Parkinson, T.**, & de Dear, R. J. (2016). [Thermal pleasure in built environments: Spatial alliesthesia from contact heating](https://doi.org/10.1080/09613218.2015.1082334){target="_blank"}. Building Research & Information, 44(3), 248–262.
+- **Parkinson, T.**, de Dear, R. J., & Candido, C. (2016). [Thermal pleasure in built environments: Alliesthesia in different thermoregulatory zones](https://doi.org/10.1080/09613218.2015.1059653){target="_blank"}. Building Research & Information, 44(1), 20–33.
+- **Parkinson, T.**, & de Dear, R. J. (2015). [Thermal pleasure in built environments: Physiology of alliesthesia](https://doi.org/10.1080/09613218.2015.989662){target="_blank"}. Building Research & Information, 43(3), 288–301.
 - **Parkinson, T.**, Parkinson, A., & de Dear, R. (2015). Introducing the SAMBA indoor environmental quality monitoring system. Living and Learning: Research for a Better Built Environment, 49th International Conference of the Architectural Science Association, 1139–1148.
-- Slee, B., **Parkinson, T.**, & Hyde, R. (2014). [Quantifying useful thermal mass: How much thermal mass do you need?](https://doi.org/10.1080/00038628.2014.951312) Architectural Science Review, 57(4), 271–285.
+- Slee, B., **Parkinson, T.**, & Hyde, R. (2014). [Quantifying useful thermal mass: How much thermal mass do you need?](https://doi.org/10.1080/00038628.2014.951312){target="_blank"} Architectural Science Review, 57(4), 271–285.
 - **Parkinson, T.**, Candido, C., & de Dear, R. (2013). Comfort Chimp: A Multi-Platform IEQ Questionnaire Development Environment. CLIMA 2013: Energy Efficient, Smart and Healthy Buildings.
 - Candido, C., de Dear, R., Thomas, L., Kim, J., & **Parkinson, T.** (2012). BOSSA – Building Occupants Survey System Australia. 6.
 - **Parkinson, T.**, de Dear, R. J., & Candido, C. (2012). Perception of transient thermal environments: Pleasure and alliesthesia. 7th Windsor Conference: The Changing Context of Comfort in an Unpredictable World Cumberland Lodge, Windsor, UK, 12-15 April 2012.
