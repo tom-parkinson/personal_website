@@ -60,7 +60,7 @@ A major aim of the project is to evaluate the filtration efficiency of portable 
 
 # Overcooling
 
-The appetite for cooling is growing - air conditioning represents the fastest growing source of energy use in buildings, with cooling energy tripling between 1990 and 2016. Part of this energy demand is wasted on excessive cooling of offices. <a href="https://rdcu.be/cCQlN" target="_blank">We analyzed</a> 38,851 responses to the CBE Occupant Survey about satisfaction with temperature, as well as crowd-sourced thermal comfort feedback from office building occupants on Twitter. We collected 16,791 tweets with common expressions of cold discomfort in US offices and found office temperatures are generally less comfortable for women largely due to this overcooling.
+The appetite for cooling is growing - air conditioning represents the fastest growing source of energy use in buildings, with cooling energy tripling between 1990 and 2016. Part of this energy demand is wasted on excessive cooling of offices. <a href="https://rdcu.be/cCQlN" target="_blank">We analyzed</a> 38,851 satisfaction responses in the CBE Occupant Survey as well as crowd-sourced thermal comfort feedback from office building occupants on Twitter. We collected 16,791 tweets with common expressions of cold discomfort across the US and found office temperatures are generally less comfortable for women largely due to this overcooling.
 
 ![Overcooling](/images/alluvial.png)
 
