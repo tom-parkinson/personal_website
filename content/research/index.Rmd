@@ -37,7 +37,7 @@ Much of my time on this project involves working closely with industry partners 
 
 # Wildfire resilience
 
-Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. This [project](https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/) will develop a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. The solution includes software that programs smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations to ensure adequate indoor air quality. The aim is to improve public health and climate resilience in residential buildings.
+Fine particulate matter is the largest environmental risk factor for human health and death in California, and wildfires in the western United States are a major source. With this <a href="https://citris-uc.org/13-cross-campus-projects-selected-for-2021-seed-awards/" target="_blank">project</a> we developed a technological intervention to help mitigate the health impacts of wildfire smoke in Californian homes. The solution includes software for smart thermostats to adjust ventilation system operation based on outdoor particulate concentrations. This ensures adequate indoor air quality and improves public health and climate resilience in residential buildings.
 
 ```{r citris, include = TRUE, fig.height = 5.5}
 
@@ -56,17 +56,26 @@ read_rds(here::here("static", "plots", "plot_map.rds")) +
 
 ```
 
-A core aim of the project is to evaluate the filtration efficiency of portable air cleaners compared to central furnace systems. This includes a mass balance model of particulate infiltration during the 2020 wildfires based on housing characteristics from census data at the tract level.
+A major aim of the project is to evaluate the filtration efficiency of portable air cleaners compared to central furnace systems. We developed a dynamic mass balance model of particulate infiltration to simulate indoor particulate exposure during the 2020 wildfires based on housing characteristics from census data at the tract level.
 
 # Overcooling
 
-Here
+The appetite for cooling is growing - air conditioning represents the fastest growing source of energy use in buildings, with cooling energy tripling between 1990 and 2016. Part of this energy demand is wasted on excessive cooling of offices. <a href="https://rdcu.be/cCQlN" target="_blank">We analyzed</a> 38,851 responses to the CBE Occupant Survey about satisfaction with temperature, as well as crowd-sourced thermal comfort feedback from office building occupants on Twitter. We collected 16,791 tweets with common expressions of cold discomfort in US offices and found office temperatures are generally less comfortable for women largely due to this overcooling.
+
+```{r overcooling, include = TRUE, fig.height = 5.5}
+
+# load plot image
+knitr::include_graphics(here::here("static", "images", "alluvial.png"))
+
+```
+
+The impacts of this pervasive overcooling on well-being and performance are borne predominantly by women. These findings corroborate existing evidence of lower thermal satisfaction in offices for women and identify overcooling as a common reason for the gender disparity. The problem is likely to increase in the future due to growing demand for cooling in increasingly extreme climates. 
 
 # Alliesthesia
 
 Here
 
-# IEQ monitoring technology
+# IEQ monitoring
 
 Here
 
