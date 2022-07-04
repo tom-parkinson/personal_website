@@ -10,6 +10,7 @@ categories: ["Research"]
 
 # load tidyverse
 library(tidyverse)
+library(patchwork)
 
 # define knitr settings
 knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, 
@@ -84,13 +85,24 @@ Along with patenting the technology, we [detailed the development](https://doi.o
 
 # Measurement and verification 
 
-Here
+Measurement and verification (M&V) is used to measure the effect of an intervention in a building compared to a baseline scenario. Traditional M&V methods measuring pre- and post-intervention for a predefined period of time. However, in some cases it is possible to frequently switch back and forth at little to no cost e.g. software interventions. We developed a novel M&V solution drawing on examples in other industries, such as repeated crossover trials in medicine and A/B testing in software development. It is a robust statistical procedure for improving M&V methods for software interventions in buildings.
+
+```{r mandv, include = TRUE, fig.height = 5.0}
+
+# load plot object
+read_rds(here::here("static", "plots", "plot_mv.rds")) +
+  labs(title = NULL) +
+  theme(plot.background = element_blank())
+
+```
+
+The strategy randomly assigned HVAC control strategies each day but ensures they are evenly distributed across the two blocks. Complementary statistical analyses are performed on the measurements on a weekly basis and automatically distributed to stakeholders. This determines the efficacy of the intervention sooner than the complete measurement period and quantify the degree of confidence in the savings estimate at any point in time.
 
 # Thermal comfort
 
 I have done extensive research on the topic of human thermal comfort in buildings. This work has ranged from [residential air-conditioning use](https://doi.org/10.1016/j.enbuild.2017.02.061){target="_blank"} to [anomaly detection of comfort votes](){target="_blank"} to [thermal sensitivity of building occupants](){target="_blank"}. Most notably, we used a [global database](https://doi.org/10.1016/j.buildenv.2018.06.022){target="_blank"} to define a [set of nudges](https://doi.org/10.1016/j.enbuild.2019.109559){target="_blank"} to [international thermal comfort standards](https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy){target="_blank"} to improve comfort in commercial buildings while reducing energy use. This work is an update to the landmark adaptive comfort study, which demonstrated that occupants of naturally ventilated buildings were more comfortable with seasonal temperature variation compared to people in air-conditioned buildings.
 
-```{r acm, include = TRUE, fig.height = 5.5}
+```{r acm, include = TRUE, fig.height = 4.0}
 
 # load plot object
 read_rds(here::here("static", "plots", "plot_acm.rds")) +
