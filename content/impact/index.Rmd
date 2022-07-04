@@ -1,0 +1,237 @@
+---
+title: "Impact"
+author: "Tom Parkinson"
+date: '`r format(Sys.time(), "%B  %Y")`'
+categories: ["Impact"]
+#tags: ["Research"]
+---
+
+```{r setup, include = FALSE}
+
+# load tidyverse
+library(tidyverse)
+library(patchwork)
+library(lubridate)
+library(ggmap)
+library(here)
+
+# define knitr settings
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, message = FALSE, warning = FALSE, 
+                      fig.width = 8.0, fig.align = "center")
+
+# set plot colour
+my_colour <- "#F98976"
+
+# define ggplot theme
+theme_set(theme_bw(base_size = 10) +
+            theme(plot.title = element_text(hjust = 0, size = 14, face = "bold", colour = "grey20"),
+                  plot.subtitle = element_text(hjust = 0, size = 12, face = "italic", colour = "grey40"),
+                  panel.grid.minor = element_blank(),
+                  panel.grid.major.x = element_blank(),
+                  panel.background = element_blank(),
+                  panel.border = element_blank(),
+                  axis.ticks = element_blank(),
+                  plot.margin = margin(0.1, 0.4, 0.1, 0.4, "cm")))
+
+# read in scopus data
+# download data from Scopus: authors page > Documents > Export All > .csv
+df_scopus <- read_csv(here("static", "data", "my_docs.csv")) %>%
+  janitor::clean_names()
+
+# import citations over time
+# download data from Scopus: authors page > Citation Overview > Set date range > Export
+df_cites <- rscopus::read_cto_long(here("static", "data", "my_cto.csv")) %>%
+  .$data %>%
+  janitor::clean_names() %>%
+  filter(!str_detect(year, ">|<")) %>%
+  arrange(publication_year, document_title)
+
+# calculate h-index
+df_hindex <- df_cites %>%
+  filter(publication_year <= as.numeric(as.character(year))) %>%
+  group_by(document_title) %>%
+  arrange(year) %>%
+  mutate(cites = cumsum(citations)) %>%
+  ungroup() %>%
+  group_by(year) %>%
+  arrange(year, desc(cites)) %>%
+  summarise(h_index = sum(cites >= seq_along(cites)),
+            outputs = n_distinct(document_title)) %>%
+  mutate(outputs = outputs - lag(outputs, 1),
+         outputs = replace_na(outputs, 0),
+         year = as.numeric(as.character(year)))
+
+# get list of cited by from Scopus > Author Page > Cited By X Documents > Export All > CSV
+df_country <- read_csv(here("static", "data", "my_cites.csv")) %>%
+  janitor::clean_names()
+
+# get authors list [Updated April 2022]
+df_authors <- read_csv(here("static", "data", "my_coauthors.csv")) %>%
+  select(institution, country, lon, lat, year)
+
+```
+
+<br />
+
+My research goal is to improve built environments for the people who inhabit them. Part of this desire is for my work to have impact on both the research community and practitioners in the building sector. While it is difficult to assess the impact on practice, research metrics provide an overview of the interest in my work. This is a summary of that impact using data from Scopus.
+
+In the `r as.integer(format(Sys.Date(), "%Y")) - 2014` years that I have been active, I have published `r df_scopus %>% count(document_type) %>% filter(document_type == "Article") %>% pull(n)` articles and `r df_scopus %>% count(document_type) %>% filter(document_type == "Conference Paper") %>% pull(n)` conference papers. All `r df_scopus %>% count(document_type) %>% filter(document_type == "Article") %>% pull(n)` journal papers are in Q1 journals based on the SJR system. Research outlets include high-impact journals like `r df_scopus %>% count(source_title) %>% slice_max(n, n = 3) %>% pull(source_title) %>% toString()`, and Nature Scientific Reports. The plot below shows my research outputs and [h-index](https://en.wikipedia.org/wiki/H-index){target="_blank"} each year since my first publication.
+
+```{r plot_outputs, include = TRUE, fig.height = 4}
+
+# plot outputs and h-index
+ggplot(df_hindex, aes(x = year)) +
+  geom_col(aes(y = outputs), width = 0.8, fill = my_colour, alpha = 0.75) +
+  geom_line(aes(y = h_index/2), size = 0.75, linetype = "twodash", colour = "grey50", group = 1) +
+  #geom_text(aes(label = outputs, y = 0.25), size = 9/(14/5), colour = "white", fontface = "bold") +
+  geom_text(label = "3 documents", x = 2013, y = 3, hjust = 0, vjust = -0.5, size = 3.0, 
+            colour = "grey50", fontface = "italic", check_overlap = TRUE) +
+  geom_text(label = "6 documents", x = 2013, y = 6, hjust = 0, vjust = -0.5, size = 3.0, 
+            colour = "grey50", fontface = "italic", check_overlap = TRUE) +
+  annotate("text", x = max(df_hindex$year), y = max(df_hindex$h_index)/2, vjust = -0.75, hjust = 1, size = 9/(14/5),
+           colour = "grey40", fontface = "bold.italic", label = paste("h-index:", max(df_hindex$h_index))) +
+  scale_x_continuous(limits = c(2013.5, year(today()) + 0.5), breaks = seq(2014, year(today()), by = 2)) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 8), breaks = seq(3, 14, by = 3)) +
+  labs(x = NULL, y = NULL, title = NULL, subtitle = NULL) +
+  coord_cartesian(clip = "off") +
+  theme(axis.text.x = element_text(size = 8, colour = "grey30", face = "bold", margin = margin(t = 3, b = 0)),
+        axis.text.y = element_blank())
+
+```
+
+<br />
+
+My h-index of `r max(df_hindex$h_index)` demonstrates a continued commitment to publishing research with impact. This is reinforced by my work being cited a total of `r df_scopus %>% summarise(citations = sum(as.numeric(cited_by), na.rm = TRUE)) %>% pull(citations)` times as per Scopus. I have over 1,200 citations on ResearchGate and over 1,500 on Google Scholar as of `r format(Sys.time(), "%B, %Y")`. The plot below showing the number of citations per year indicates an upward trend. I am ranked `r read_csv(here("static", "data", "aus_500.csv"), skip = 12) %>% janitor::clean_names() %>% filter(field_weighted_citation_impact > 3.69) %>% nrow() %>% scales::ordinal()` of Australian researchers in Built Environment and Design based on field-weighted citation impact.
+
+``` {r plot_cites, include = TRUE, fig.height = 4}
+
+# plot citations by year
+df_cites %>%
+  group_by(year) %>%
+  summarise(citations = sum(citations, na.rm = TRUE)) %>%
+  mutate(year = as.numeric(as.character(year))) %>%
+  ggplot(aes(x = year, y = citations)) +
+  geom_col(fill = my_colour, alpha = 0.75) +
+  geom_text(label = "100 citations", x = 2013, y = 100, hjust = 0, vjust = -0.5, size = 3.0, 
+            colour = "grey50", fontface = "italic", check_overlap = TRUE) +
+  geom_text(label = "200 citations", x = 2013, y = 200, hjust = 0, vjust = -0.5, size = 3.0, 
+            colour = "grey50", fontface = "italic", check_overlap = TRUE) +
+  scale_x_continuous(limits = c(2013.5, year(today()) + 0.5), breaks = seq(2014, year(today()), by = 2)) +
+  scale_y_continuous(expand = c(0, 0), breaks = c(100, 200)) +
+  labs(x = NULL, y = NULL, title = NULL, subtitle = NULL) +
+  coord_cartesian(clip = "off") +
+  theme(axis.text.x = element_text(size = 9, colour = "grey25", face = "bold", margin = margin(t = 3, b = 0)),
+        axis.text.y = element_blank())
+
+```
+
+<br />
+
+I have a track-record of publishing papers in high-impact outlets that attract interest from the research community. The plot below shows the impact of my publications compared to the impact factors of the journal in which they are published. The majority of papers published before 2020 have above-average citations, and the most successful publications attracting over 5 times the average number for those journals. Points with white text indicated works that were published within the last two years. 
+
+``` {r plot_impact, include = TRUE, fig.height = 4}
+
+# get article citations
+df_articles <- df_cites %>%
+  group_by(document_title) %>%
+  summarise(year = unique(publication_year),
+            journal = unique(journal_title),
+            citations = sum(citations, na.rm = TRUE)) %>%
+  arrange(-citations)
+
+# make table of impact factors [Updated: April 2022]
+df_articles <- tibble(journal = c("Building Research and Information", "Building and Environment", "Energy and Buildings", 
+                                    "Procedia Engineering", "Architectural Science Review", "ASHRAE Transactions", "Indoor Air",
+                                    "Scientific Reports", "Indoor and Built Environment"),
+                  impact_f = c(5.11, 6.90, 6.33, 1.378, 1.99, 0.22, 5.37, 4.13, 2.92)) %>%
+  left_join(df_articles, ., by = "journal") %>%
+  drop_na(impact_f)
+
+# calculate impact over time
+df_articles <- df_articles %>%
+  mutate(time_since = year(today()) - year,
+         impact = impact_f*time_since,
+         ratio = citations/impact,
+         impact_norm = citations/time_since)
+
+# make long for plot
+df_articles <- df_articles %>%
+  pivot_longer(cols = c(impact_f, impact_norm), names_to = "metric", values_to = "impacts") %>%
+  filter(impact > 0)
+
+# plot IFs
+ggplot(df_articles, aes(x = fct_reorder(document_title, -impacts), y = impacts)) +
+  geom_line(aes(group = document_title), size = 0.5, colour = "grey80",
+            arrow = arrow(length = unit(0.2, "cm"), ends = "last", type = "closed")) +
+  geom_point(alpha = 1, colour = ifelse(df_articles$metric == "impact_f", "grey80", my_colour), 
+             size = ifelse(df_articles$metric == "impact_f", 3, 8)) +
+  geom_text(aes(label = ifelse(metric == "impact_f", "", scales::number(ratio, accuracy = 0.1, suffix = "x"))), 
+            size = 7/(14/5), colour = ifelse(df_articles$time_since <= 2, "white", "grey20"), fontface = "bold") +
+  geom_curve(aes(x = 11, xend = 8.5, y = 14.5,  yend = 11.5), 
+             colour = my_colour, size = 0.5, curvature = 0.2, arrow = arrow(length = unit(0.02, "npc"))) +
+  geom_text(x = 11.25, y = 14.5, hjust = 0, vjust = 0.5, size = 2.8, 
+            colour = my_colour, fontface = "plain", label = "My paper", check_overlap = TRUE) +
+  geom_curve(aes(x = 5.5, xend = 7.8, y = 1.5,  yend = 4.4), 
+             colour = "grey80", size = 0.5, curvature = 0.3, arrow = arrow(length = unit(0.02, "npc"))) +
+  geom_text(x = 5.2, y = 1.65, hjust = 1, vjust = 0.5, size = 2.8, 
+            colour = "grey80", fontface = "plain", label = "Journal", check_overlap = TRUE) +
+  labs(x = NULL, y = NULL, title = NULL, subtitle = NULL) +
+  theme(axis.text = element_blank())
+
+
+# get list of citations from country
+df_country <- df_country %>%
+  select(authors_with_affiliations, year) %>%
+  rename("author" = "authors_with_affiliations") %>%
+  separate_rows(author, sep = ";") %>%
+  mutate(author = trimws(str_to_lower(author), which = "both"),
+         country = sub('.*\\,', '', author),
+         country = trimws(country, which = "both")) %>%
+  filter(nchar(country) > 3) %>%
+  count(country) %>%
+  mutate(country = str_replace_all(country, c("united states" = "usa", "united kingdom" = "uk")))
+
+```
+
+<br />
+
+My work has been cited by researchers from `r nrow(df_country)` countries, with most interest coming from China, USA, Australia, and UK.
+This reflects my commitment to exploring ideas that are global in scope and relevant to an international audience. I am fortunate enough to have worked with a number of peers and mentors from around the world, with 55% of my outputs from international collaborations. The map below shows my network of co-authors from `r length(unique(df_authors$institution))` in `r length(unique(df_authors$country))` countries.
+
+``` {r plot_map, include = TRUE, fig.height = 3.5}
+
+# set origins for curve
+df_authors <- df_authors %>%
+  mutate(long_origin = case_when(year <= 2019 ~ 151.1894337,
+                                 TRUE ~ -122.2663987),
+         lat_origin = case_when(year <= 2019 ~ -33.888907,
+                                TRUE ~ 37.870946))
+
+# list notable universities
+list_top <- c("Loughborough University", "Politecnico di Milano", "Tsinghua University", "University of California Berkeley",
+              "University of Sydney", "University of Tokyo", "Technical University of Denmark", "National University of Singapore")
+
+# do map
+ggplot() + 
+  borders("world", colour = "grey95", fill = "grey90", size = 0.3) +
+  geom_curve(data = df_authors, aes(x = long_origin, y = lat_origin, xend = lon, yend = lat), 
+             col = my_colour, size = 0.25, curvature = 0.20, alpha = 0.6, linetype = "solid") + 
+  geom_point(data = df_authors, aes(x = lon, y = lat), size = 0.8, colour = my_colour, alpha = 0.8, shape = 16) + 
+  geom_text(data = filter(df_authors, institution %in% list_top), 
+            aes(x = lon, y = lat, label = str_wrap(institution, 20)), lineheight = 0.7,
+            col = "black", vjust = 0.0, hjust = 0.5, size = 1.9, nudge_y = 1.5, fontface = "bold", check_overlap = TRUE) + 
+  labs(x = NULL, y = NULL, title = NULL, subtitle = NULL) +
+  coord_fixed(ratio = 1.15, xlim = NULL, ylim = c(-50, 80), expand = TRUE, clip = "on") +
+  theme_void() +
+  theme(plot.title = element_text(hjust = 0, size = 14, face = "bold", colour = "grey20"),
+        plot.subtitle = element_text(hjust = 0, size = 12, face = "italic", colour = "grey40"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        panel.background = element_blank(),
+        panel.border = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_blank(),
+        plot.margin = margin(0.0, 0.0, 0.0, 0.0, "cm"))
+
+```
+
